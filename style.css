@@ -74,10 +74,6 @@ a {
     background-color: #0099C8;
 }
 
-.header__banner-img{
-    width: 436px;
-}
-
 /* Основная часть */
 .tariff-plans {
     margin: 52px 4.5vw 0 4.5vw;
@@ -240,7 +236,7 @@ a {
 }
 
 /* ----------------------------Стили для адаптивности ------------------------------------------------------------------- */
-@media (max-width: 320px) {
+@media (max-width: 768px) {
 
     /* Баннер*/
     .header__banner {
@@ -267,8 +263,8 @@ a {
         margin-bottom: 2.28vh;
     }
 
-    .header__banner-img img {
-        width: 226px;
+    .header__banner-img img{
+        width: 350px;
     }
 
     /* Основная часть */
@@ -322,7 +318,7 @@ a {
         font-size: 10px;
     }
     .tariff-plans__item-button {
-        padding: 49px 11px;
+        padding: 11px 49px;
         font-size: 12px;
     }
 
@@ -337,27 +333,12 @@ a {
     .footer__text p {
         font-size: 12px;
     }
-
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
 
-@media (max-width: 600px) {
-    .tariff-plans__item {
-        padding: 15px;
-    }
-
-    .tariff-plans__item-title {
-        font-size: 1.2em;
-    }
-
-    .tariff-plans__item-button {
-        padding: 8px 16px;
+    /* Баннер*/
+    .header__banner-img img{
+        width: 226px;
     }
 }
-
-@media (max-width: 768px) {}
-
-@media (max-width: 992px) {}
-
-@media (max-width: 1200px) {}
