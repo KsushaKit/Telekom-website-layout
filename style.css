@@ -42,6 +42,7 @@ a {
 .header__banner {
     display: flex;
     padding: 88px 5% 89px 5%;
+    justify-content: space-between;
 }
 
 .header__banner-title {
@@ -59,7 +60,7 @@ a {
 }
 
 .header__banner-button {
-    padding: 0.9vh 6.15vw;
+    padding: 12px 60px;
     font-size: 14px;
     border-radius: 5px;
     background-color: #C81059;
@@ -73,8 +74,8 @@ a {
     background-color: #0099C8;
 }
 
-.header__banner-img img {
-    width: 43.6vw;
+.header__banner-img{
+    width: 436px;
 }
 
 /* Основная часть */
@@ -191,7 +192,7 @@ a {
 }
 
 .tariff-plans__item-button {
-    padding: 0.9vh 3vw;
+    padding: 12px 80px;
     font-size: 14px;
     border-radius: 5px;
     background-color: #C81059;
