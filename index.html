@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Шрифты -->
+
+    <!-- Основные стили -->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Основные стили -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/functions.js"></script>
@@ -23,19 +30,28 @@
 
     <header class="header">
         <div class="header__logo">
-            <img src="./images/logo.png" alt="Логотип К Телеком">
+            <img class="header__logo-img" src="./images/logo.png" alt="Логотип К Телеком">
         </div>
-        <div class="header__banner">
-            <div class="header__banner-content">
-                <h1 class="header__banner-title">Экономия нервов и денег — интернет К-Телеком</h1>
-                <ul class="header__banner-list">
-                    <li class="header__banner-list-item">5 тарифов для многоквартирных и 4 для частных домов</li>
-                    <li class="header__banner-list-item">безлимит подключенных устройств</li>
-                    <li class="header__banner-list-item">комфортная поддержка 24/7</li>
-                </ul>
-                <button class="header__banner-button">Подробнее</button>
+
+        <div class="header__banner-wrapper">
+            <div class="header__banner">
+
+                <div class="header__banner-content">
+                    <h1 class="header__banner-title">Экономия нервов и денег — интернет К-Телеком</h1>
+                    <ul class="header__banner-list">
+                        <li class="header__banner-list-item">5 тарифов для многоквартирных и 4 для частных домов</li>
+                        <li class="header__banner-list-item">безлимит подключенных устройств</li>
+                        <li class="header__banner-list-item">комфортная поддержка 24/7</li>
+                    </ul>
+                    <button class="header__banner-button">Подробнее</button>
+                </div>
+    
+                <div class="header__banner-img">
+                    <img src="./images/banner_pic.png" alt="Картинка">
+                </div>
             </div>
         </div>
+
     </header>
 
 
@@ -124,17 +140,19 @@
 
     <footer class="footer">
 
-        <div class="footer__logo"></div>
-        <p class="footer__text"></p>
+        <div class="footer__logo">
+            <img class="footer__logo-img" src="./images/logo.png" alt="Логотип К Телеком">
+        </div>
+        <div class="footer__text"><p> © 2018–2022 ООО «К-Телеком»</p></div>
         <div class="footer__icons">
             <a class="footer__icons-link footer__icons-link--instagram" href="">
-                <img class="footer__icons-img" src="" alt="Instagram">
+                <img class="footer__icons-img" src="./images/instagram.png" alt="Instagram">
             </a>
             <a class="footer__icons-link footer__icons-link--youtube" href="">
-                <img class="footer__icons-img" src="" alt="YouTube">
+                <img class="footer__icons-img" src="./images/youtube.png" alt="YouTube">
             </a>
             <a class="footer__icons-link footer__icons-link--vk" href="">
-                <img class="footer__icons-img" src="" alt="VK">
+                <img class="footer__icons-img" src="./images/vk.png" alt="VK">
             </a>
         </div>
 
@@ -161,8 +179,8 @@
                 }
               }
             })
+            
         });
-      
       </script>
       
 </body>
