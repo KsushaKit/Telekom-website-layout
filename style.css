@@ -12,10 +12,13 @@ body {
     font-weight: medium;
     line-height: 1.5;
 }
+a {
+    text-decoration: none;
+}
 /* Шапка сайта */
 .header__logo {
     width: 100%;
-    height: 6vh;
+    height: 80px;
     display: flex;
     display: flex;
     flex-wrap: wrap;
@@ -27,8 +30,8 @@ body {
 }
 
 .header__logo-img img{
-    height: 2.7vh;
-    width: 14.7vw;
+    height: 36px;
+    width: 147px;
 }
 
 /* Баннер */
@@ -38,7 +41,7 @@ body {
 
 .header__banner {
     display: flex;
-    padding: 8.8% 5% 8.8% 5%;
+    padding: 88px 5% 89px 5%;
 }
 
 .header__banner-title {
@@ -52,6 +55,7 @@ body {
     font-size: 16px;
     margin-top: 0.76vh;
     margin-bottom: 2.28vh;
+    line-height: 2;
 }
 
 .header__banner-button {
@@ -75,7 +79,7 @@ body {
 
 /* Основная часть */
 .tariff-plans {
-    margin: 4vh 4.5vw 0vh 4.5vw;
+    margin: 52px 4.5vw 0 4.5vw;
 }
 
 .tariff-plans__title {
@@ -100,13 +104,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6.3vh;
+    margin-bottom: 83px;
 }
 
 /* Стили для элементов карусели */
 .tariff-plans__item {
     width: 34.7vw;
-    height: 36.6vh;
+    height: 481px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -144,7 +148,7 @@ body {
 }
 
 .tariff-plans__item-checkbox input{
-margin-right: 15px;
+    margin-right: 15px;
 }
 
 [type="checkbox"] {
@@ -202,7 +206,141 @@ margin-right: 15px;
     background-color: #0099C8;
 }
 
-/* Стили для адаптивности */
+/* Подвал */
+.footer__wrapper {
+    height: 97px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.footer__logo-img {
+    height: 36px;
+    width: 147px;
+}
+
+.footer__text p {
+    color: #C2C2C2;
+    font-size: 14px;
+    margin-top: 1vh;
+}
+
+/* ----------------------------Стили для адаптивности ------------------------------------------------------------------- */
+@media (max-width: 320px) {
+
+    /* Баннер*/
+    .header__banner {
+        display: flex;
+        padding: 35px 5% 35px 5%;
+        flex-direction: column-reverse;
+    }
+
+    .header__banner-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .header__banner-button {
+        padding: 11px 108px;
+        font-size: 12px;
+    }
+    
+    .header__banner-list {
+        font-family: 'Open Sans', sans-serif; 
+        color: #555555;
+        font-size: 13px;
+        margin-top: 0.76vh;
+        margin-bottom: 2.28vh;
+    }
+
+    .header__banner-img img {
+        width: 226px;
+    }
+
+    /* Основная часть */
+    .tariff-plans {
+        margin: 35px 4.5vw 0 4.5vw;
+    }
+
+    .tariff-plans__title {
+        font-size: 18px;
+    }
+
+    /* Стили для элементов карусели */
+    .tariff-plans__item {
+        width: 204px;
+        height: 413px;
+    }
+
+    .tariff-plans__item-title {
+        font-size: 16px;
+    }
+
+    .tariff-plans__item-speed{
+        font-size: 10px;
+    }
+
+    .tariff-plans__item-value {
+        font-size: 17px;
+    }
+
+    .tariff-plans__item-description {
+        font-size: 12px;
+    }
+
+    .tariff-plans__item-checkbox {
+        font-size: 12px;
+    }
+
+    .tariff-plans__item-checkbox input{
+        margin-right: 14px;
+    }
+
+    .tariff-plans__item-price-value {
+        font-size: 18px;
+    }
+
+    .tariff-plans__item-price {
+        font-size: 14px; 
+    }
+
+    .tariff-plans__item-note {
+        font-size: 10px;
+    }
+    .tariff-plans__item-button {
+        padding: 49px 11px;
+        font-size: 12px;
+    }
+
+    /* Подвал */
+    .footer__logo {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer__text p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {}
+
 @media (max-width: 600px) {
     .tariff-plans__item {
         padding: 15px;
@@ -217,29 +355,8 @@ margin-right: 15px;
     }
 }
 
-/* Подвал */
-.footer {
-    height: 7.4vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
+@media (max-width: 768px) {}
 
-.footer__logo-img {
-    margin-left: 5vw;
-}
+@media (max-width: 992px) {}
 
-.footer__logo-img img{
-    height: 2.7vh;
-    width: 14.7vw;
-}
-
-.footer__text {
-    margin-left: 6vw;
-    margin-right: 34.3vw;
-}
-
-.footer__text p {
-    color: #C2C2C2;
-    margin-top: 1vh;
-}
+@media (max-width: 1200px) {}
