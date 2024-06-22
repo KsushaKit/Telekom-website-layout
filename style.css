@@ -1,0 +1,76 @@
+/* Основные стили для карусели */
+.owl-carousel .owl-stage-outer {
+    overflow: hidden;
+    position: relative;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для элементов карусели */
+.tariff-plans__item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tariff-plans__item-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tariff-plans__item-speed,
+.tariff-plans__item-value,
+.tariff-plans__item-description,
+.tariff-plans__item-price,
+.tariff-plans__item-note {
+    margin-bottom: 10px;
+}
+
+.tariff-plans__item-checkbox {
+    margin-bottom: 10px;
+}
+
+.tariff-plans__item-checkbox-label {
+    display: block;
+}
+
+.tariff-plans__item-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tariff-plans__item-button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для адаптивности */
+@media (max-width: 600px) {
+    .tariff-plans__item {
+        padding: 15px;
+    }
+
+    .tariff-plans__item-title {
+        font-size: 1.2em;
+    }
+
+    .tariff-plans__item-button {
+        padding: 8px 16px;
+    }
+}
